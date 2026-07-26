@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    text-align: center;
+    background: linear-gradient(135deg, #3b0754, #8e44ad, #d8b4fe);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #f5d0fe;
+    text-shadow: 0 0 15px #fff;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 22px;
+}
+
+
+button {
+    background: #9b59b6;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #fff;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+.music {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #1db954;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+#answers button {
+    display: block;
+    margin: 15px auto;
+    width: 250px;
+}
+
+
+#message {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+.photo-frame {
+    margin: 30px auto;
+    padding: 15px;
+    width: 300px;
+    background: #e8b7ff;
+    border: 10px solid #c084fc;
+    border-radius: 30px;
+    box-shadow: 0 0 30px white;
+}
+
+
+.photo-frame img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.flowers {
+    font-size: 35px;
+    line-height: 2;
+}
+
+
+/* Petali che cadono */
+
+.petals::before {
+    content: "🌸 💜 🌺 🤍 🌸 💜 🌺";
+    position: fixed;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    font-size: 35px;
+    animation: fall 12s linear infinite;
+}
+
+
+@keyframes fall {
+
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+
+}
